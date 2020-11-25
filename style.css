@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f8f8;
+  font-family: 'Montserrat', sans-serif;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  background: #f9f8f8;
+  width: 800px;
+  margin: auto;
+  box-shadow: -1px -1px 9px 8px #e6e7e7;
+}
+
+.container img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.header {
+  text-align: center;
+  color: #0d0c0d;
+  padding: 20px 0;
+}
+
+.source {
+  text-align: center;
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.source a {
+  color: #a3b7de;
+  text-decoration-line: none;
+}
+
+.billionaires-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.image {
+  visibility: hidden;
+}
+
+td {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.table-head {
+  text-align: left;
+  background-color: #f1f5f8;
+  color: #4a3f61;
+  padding: 8px;
+}
+
+.table-head th {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.table-body {
+  font-size: 14px;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.name {
+  color: #343f5a;
+  font-weight: 600;
+}
+
+.networth {
+  text-align: center;
+  color: #505553;
+  font-weight: 600;
+}
+
+.industry,
+.nationality,
+.s-o-w {
+  color: #505553;
+}
+
+.get-in-touch {
+  background-color: #001f61;
+  border-radius: 30px;
+  position: fixed;
+  padding: 20px 30px;
+  right: 10px;
+  bottom: 30px;
+}
+
+.get-in-touch a {
+  color: white;
+  text-decoration-line: none;
+}
+/*# sourceMappingURL=style.css.map */
