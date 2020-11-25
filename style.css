@@ -4,10 +4,14 @@
   box-sizing: border-box;
 }
 
-body {
+html {
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+}
+
+body {
   background: #f9f8f8;
   font-family: 'Montserrat', sans-serif;
   flex-direction: column;
@@ -16,7 +20,7 @@ body {
 
 .container {
   background: #f9f8f8;
-  width: 800px;
+  max-width: 800px;
   margin: auto;
   box-shadow: -1px -1px 9px 8px #e6e7e7;
 }
@@ -113,5 +117,30 @@ tr:nth-child(even) {
 .get-in-touch a {
   color: white;
   text-decoration-line: none;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 20px;
+  }
+  .container {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+  .get-in-touch {
+    background-color: #001f61;
+    border-radius: 30px;
+    position: fixed;
+    padding: 9px 7px;
+    right: 10px;
+    bottom: 8px;
+  }
+  .get-in-touch a {
+    color: white;
+    text-decoration-line: none;
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
